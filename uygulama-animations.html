@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html
+        {
+            scroll-behavior: smooth;
+        }
+
+        body
+        {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #page-1
+        {
+            background-color: blue;
+        }
+
+        #page-2
+        {
+            background-color: red;
+        }
+
+        #page-3
+        {
+            background-color: green;
+        }
+
+
+        .page
+        {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .page h1
+        {
+           font-size: 5rem;
+           margin: 2rem;
+        }
+
+        .page p
+        {
+           font-size: 1.5rem;
+           
+        }
+
+        .btn
+        {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: white;
+            color: #333;
+            font-size: 1.2rem;
+            transition: all .3s ease-in;
+
+        }
+
+        .btn:hover
+        {
+            
+            background-color: #333;;
+            color: white;
+            
+        }
+
+        a
+        {
+            text-decoration: none;
+        }
+
+        #page-1 h1
+        {
+           transform: translateY(-800px);
+           animation: h1_anime 1s forwards ease-in;
+        }
+
+        @keyframes h1_anime
+        {
+            to 
+            {
+                transform: translateY(0);
+            }
+        }
+
+        #page-1 p
+        {
+           transform: translateX(-2000px);
+           animation: p_anime 1s forwards ease-in;
+        }
+
+        @keyframes p_anime
+        {
+            to 
+            {
+                transform: translateX(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section id="page-1" class="page">
+        <h1>Page-1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, doloribus blanditiis inventore soluta adipisci recusandae? Facere magni libero consequuntur, esse delectus veniam? Nobis veniam tempore eaque, excepturi dolores nihil asperiores.</p>
+        <div>
+            <a href="#page-2" class="btn">Next Page</a>
+        </div>
+    </section>
+
+    <section id="page-2" class="page">
+        <h1>Page-2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, doloribus blanditiis inventore soluta adipisci recusandae? Facere magni libero consequuntur, esse delectus veniam? Nobis veniam tempore eaque, excepturi dolores nihil asperiores.</p>
+        <div>
+            <a href="#page-1" class="btn">Previous Page</a>
+            <a href="#page-3" class="btn">Next Page</a>
+        </div>
+    </section>
+
+    <section id="page-3" class="page">
+        <h1>Page-3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, doloribus blanditiis inventore soluta adipisci recusandae? Facere magni libero consequuntur, esse delectus veniam? Nobis veniam tempore eaque, excepturi dolores nihil asperiores.</p>
+        <div>
+            <a href="#page-1" class="btn">Next Page</a>
+        </div>
+    </section>
+</body>
+</html>
