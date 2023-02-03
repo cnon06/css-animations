@@ -1,0 +1,173 @@
+
+#home
+{
+    
+    &_a
+    {
+       
+
+        .skills
+        {
+           
+            display: flex;
+            flex-direction: row;
+        }
+       
+
+        
+    }
+
+    &_b
+    {
+
+
+        // .lead
+        // {
+        //     font-size: 1rem;
+        // }
+       
+
+        .profile
+        {
+            // background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            
+            // align-content: center;
+            // justify-content:stretch;
+            // align-items: stretch;
+            // justify-items: stretch;
+            // align-items: center;
+
+            div
+            {
+                flex-grow: 1;
+                padding: 3rem 0;
+
+                &:nth-child(odd)
+                {
+                    display: block;
+                    background-color: $medium-color;
+                }
+
+                &:nth-child(even)
+                {
+                    background-color: $light-color;
+                }
+
+                .headline
+                {
+                    font-size: $headline_fontsize;
+                    font-weight: 700;
+                }
+
+                
+            }
+        }
+    }
+
+
+    &_c
+    {
+        // .lead
+        // {
+        //     font-size: 1rem;
+        // }
+       
+        .profile
+        {
+            // background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            // align-content: center;
+            // justify-content:stretch;
+            // align-items: stretch;
+            // justify-items: stretch;
+            // align-items: center;
+
+
+            
+            div
+            {
+
+               
+                // flex-grow: 1;
+                padding: 3rem 0;
+
+                // &:nth-child(odd)
+                // {
+                //     display: block;
+                //     background-color: $medium-color;
+                // }
+
+                // &:nth-child(even)
+                // {
+                //     background-color: $light-color;
+                // }
+
+                .big_icon
+                {
+                    // background-color: transparent;
+                    display: inline-block;
+                   margin: 0;
+                   padding: 0;
+                     position: relative;
+                     background-color: transparent;
+                     cursor: pointer;
+                    
+
+
+                    &:hover
+                    {
+                        .material-symbols-outlined
+                        {
+                            background-color: $primary-color;
+                        }
+
+                        .number
+                        {
+                            background-color: $dark-color;
+                        }
+                    }
+
+
+               
+                    
+
+                }
+
+                .number
+                {
+                     text-align: center;
+                    //  text-align: justify;
+                    // display: block;
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                     padding: 0;
+                    margin: 0;
+                    // top:-50px;
+                    top: 0;
+                    right: 0px;
+                    background-color: $primary-color;
+                    border-radius: 50%;
+                    color: white;
+                    transition: all .3s;
+
+                }
+
+                .headline
+                {
+                    font-size: $headline_fontsize;
+                    font-weight: 700;
+                }
+             
+            }
+        }
+    }
+
+
+}
+
